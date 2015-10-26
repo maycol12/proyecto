@@ -1,0 +1,73 @@
+<html>
+<head>
+  <title>MENU</title>
+  <link href = "estilos.css" rel="stylesheet">
+</head>
+<body>
+<center>
+    <h1>Paquetes </h1><br>
+
+        <table>
+<tr></tr>
+    <td><form metho = "POST" action="empleados.html ">  <tr></tr><button type = "submit">Agregar Empleados</button><td></tr>
+    </form>
+    <tr>
+   <td> <form metho = "POST" action="clientes.html "> <tr></tr><button type = "submit">Agregar Clientes</button><td></tr>
+    </form>
+    <tr>
+   <td> <form metho = "POST" action="pedidos.html "> <tr></tr><button type = "submit">Pedidos</button><td></tr>
+    </form>
+    <tr>
+   <td> <form metho = "POST" action="sucursal.html "><tr></tr> <button type = "submit">Sucursal</button> <td></tr>
+      </form>
+      <tr>
+   <td> <form metho = "POST" action="paquetes.html ">  <tr></tr> <button type = "submit">Paquetes</button>      <td></tr>
+    </form>      
+    </table>  
+
+
+
+    
+    </center>
+    <form method = "POST" action="acciones.php">        
+       idPedidos <input type ="text" name="idPedidos"/><br>
+       no_pedido<input type = "text" name="no_pedido"/><br>
+       
+
+      <input type = "hidden" name="formulario" value="Pedidos" />
+
+        <button type = "submit">Guardar</button>
+
+
+
+        </form>  
+        </justify> 
+
+
+     <p>Eliminar el pedido</p>
+
+ <form action="eliminarpedidos.php" method="POST">
+            Id del pedido : <input type="text" name="idPedidos"> <br/>
+            <button type = "submit">Eliminar</button>
+            </form>
+
+        <p>Modificar el numero del pedido</p>
+
+  <form action="actualizarpedidos.php" method="POST">
+        Id del pedido<input type="text" name="idPedido"> <br/>
+        no_pedido:<input type="text" name="no_pedido"> <br/>
+        <button type = "submit">Actualizar</button>
+        </form>
+  
+
+    <p>Ver los registros del pedido</p>
+
+  <form action="registropedidos.php" method="POST">
+  <button type = "submit">Registros</button>
+  </form>
+
+    <a href="logout.php">cerrar sesion</a>
+
+
+</body>
+</html>

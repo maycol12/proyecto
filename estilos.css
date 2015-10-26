@@ -1,0 +1,50 @@
+html{
+	/*background-image: url(pizza.jpg);
+	*/
+	background-color: silver;
+	color : black;
+	font-size: 30px;
+	font-size: arial black;
+
+}
+
+button {
+	background-color: silver;
+	color: black;
+	width: 150px;
+	height: 50px;
+}
+
+/*button.diferente{
+
+	background-color: rgb(200,0,0);
+    width: 150px;
+    height: 50px;
+}*/
+input {
+	background-color: navi;
+	color:  rgb(0,155,0);
+	width: 150px;
+	height: 50px;
+	font-size: 20px;
+	font-size: arial;
+	text-align: center;
+}
+h1 {
+ 
+
+	color: red;
+	font-size: 80px;
+	text-align: center;
+	
+
+
+
+}
+ button:hover {
+	cursor: pointer;
+	background: rgb(0,0,0,0.3);
+}
+ h2 {
+ 	background.color: blue;
+ 	color: white;

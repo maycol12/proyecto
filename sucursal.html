@@ -1,0 +1,77 @@
+<html>
+<head>
+  <title>MENU</title>
+  <link href = "estilos.css" rel="stylesheet">
+</head>
+<body>
+<center>
+    <h1>Sucursal </h1><br>
+        <table>
+<tr></tr>
+    <td><form metho = "POST" action="empleados.html ">  <tr></tr><button type = "submit">Agregar Empleados</button><td></tr>
+    </form>
+    <tr>
+   <td> <form metho = "POST" action="clientes.html "> <tr></tr><button type = "submit">Agregar Clientes</button><td></tr>
+    </form>
+    <tr>
+   <td> <form metho = "POST" action="pedidos.html "> <tr></tr><button type = "submit">Pedidos</button><td></tr>
+    </form>
+    <tr>
+   <td> <form metho = "POST" action="sucursal.html "><tr></tr> <button type = "submit">Sucursal</button> <td></tr>
+      </form>
+      <tr>
+   <td> <form metho = "POST" action="paquetes.html ">  <tr></tr> <button type = "submit">Paquetes</button>      <td></tr>
+    </form>      
+    </table>  
+    
+    </center>
+    <form method = "POST" action="acciones.php">        
+       idPizzeria <input type ="text" name="idPizerria"/><br>
+       Dirrecion<input type = "text" name="Direccion"/><br>
+       Telefono <input type = "text" name="Telefono"/><br>
+      
+
+        <input type = "hidden" name="formulario" value="agregarSucursal" />
+
+        <button type = "submit">Guardar</button>
+
+       
+       
+        
+        
+
+
+
+        </form>  
+        </justify> 
+
+
+     <p>Eliminar Sucursal</p>
+
+ <form action="eliminarsucursal.php" method="POST">
+            Id del sucursal : <input type="text" name="idSucursal"> <br/>
+            <button type = "submit">Eliminar</button>
+            </form>
+
+        <p>Modificar sucursal</p>
+
+  <form action="actualizarsucursal.php" method="POST">
+        Id sucursal<input type="text" name="idSucursal"> <br/>
+        Dirrecion:<input type="text" name="Dirrecion"> <br/>
+        Telefono:<input type="text" name="Telefono"> <br/>
+        
+        <button type = "submit">Actualizar</button>
+        </form>
+  
+
+    <p>Ver los registros del sucursal</p>
+
+  <form action="registrosucursal.php" method="POST">
+  <button type = "submit">Registros</button>
+  </form>
+
+    <a href="logout.php">cerrar sesion</a>
+
+
+</body>
+</html>

@@ -1,0 +1,84 @@
+<?php
+  include("comprobacion.php");
+?>
+
+
+<html>
+<head>
+  <title>MENU</title>
+  <link href = "estilos.css" rel="stylesheet">
+</head>
+<body>
+<center>
+    <h1>Clientes </h1><br>
+
+        <table>
+<tr></tr>
+    <td><form metho = "POST" action="empleados.html ">  <tr></tr><button type = "submit">Agregar Empleados</button><td></tr>
+    </form>
+    <tr>
+   <td> <form metho = "POST" action="clientes.html "> <tr></tr><button type = "submit">Agregar Clientes</button><td></tr>
+    </form>
+    <tr>
+   <td> <form metho = "POST" action="pedidos.html "> <tr></tr><button type = "submit">Pedidos</button><td></tr>
+    </form>
+    <tr>
+   <td> <form metho = "POST" action="sucursal.html "><tr></tr> <button type = "submit">Sucursal</button> <td></tr>
+      </form>
+      <tr>
+   <td> <form metho = "POST" action="paquetes.html ">  <tr></tr> <button type = "submit">Paquetes</button>      <td></tr>
+    </form>      
+    </table>  
+    </center>
+    <form method = "POST" action="acciones.php">        
+       idClientes <input type ="text" name="idClientes"/><br>
+       Nombre<input type = "text" name="Nombre"/><br>
+       Apellido Paterno <input type = "text" name="apellido_paterno"/><br>
+       Apellido materno <input type = "text" name="apellido_materno"/><br>
+       Telefono <input type = "text" name="Telefono"/><br>
+       Domicilio <input type = "text" name="Domicilio"/><br>
+
+       <input type = "hidden" name="formulario" value ="agregarClientes"/>
+
+       
+
+<button type = "submit">Guardar</button>
+
+
+    </form>
+    <p>Eliminar a los clientes</p>
+
+ <form action="eliminarClientes.php" method="POST">
+            Id del empleado : <input type="text" name="idClientes"> <br/>
+            <button type = "submit">Eliminar</button>
+            </form>
+
+        <p>Modificar a los Clientes</p>
+
+  <form action="actualizarclientes.php" method="POST">
+        Id del cliente<input type="text" name="idClientes"> <br/>
+        Nombre:<input type="text" name="Nombre"> <br/>
+        ApPaterno:<input type="text" name="Apellido_Paterno"> <br/>
+        apMaterno:<input type="text" name="Apellido Materno"> <br/>
+        Telefono:<input type="text" name="Telefono"> <br/>
+        Domicilio:<input type="text" name="Domicilio"> <br/>
+        <button type = "submit">Actualizar</button>
+        </form>
+  
+
+    <p>Ver los registros de los  clientes</p>
+
+  <form action="registroclientes.php" method="POST">
+  <button type = "submit">Registros</button>
+  </form>
+
+
+
+         </form>   
+        
+        
+    <a href="logout.php">cerrar sesion</a>
+
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+<?php
+  include("comprobacion.php");
+?>
+<html>
+
+<head>
+  <title>MENU</title>
+  <link href = "estilos.css" rel="stylesheet">
+</head>
+<body >
+
+<center>
+    <h1>Empleados </h1><br>
+
+    <table>
+<tr></tr>
+    <td><form metho = "POST" action="empleados.html ">  <tr></tr><button type = "submit">Agregar Empleados</button><td></tr>
+    </form>
+    <tr>
+   <td> <form metho = "POST" action="clientes.html "> <tr></tr><button type = "submit">Agregar Clientes</button><td></tr>
+    </form>
+    <tr>
+   <td> <form metho = "POST" action="pedidos.html "> <tr></tr><button type = "submit">Pedidos</button><td></tr>
+    </form>
+    <tr>
+   <td> <form metho = "POST" action="sucursal.html "><tr></tr> <button type = "submit">Sucursal</button> <td></tr>
+      </form>
+      <tr>
+   <td> <form metho = "POST" action="paquetes.html ">  <tr></tr> <button type = "submit">Paquetes</button>      <td></tr>
+    </form>      
+    </table>  
+  
+
+    </center>
+    <justify>
+    <form method = "POST" action="acciones.php "> 
+        Id:<input type="text" name = "idEmpleados"/><br>        
+       Nombre<input type = "text" name="Nombre"/><br>
+       Apellido Paterno <input type = "text" name="apellido_paterno"/><br>
+       Apellido materno <input type = "text" name="apellido_materno"/><br>
+       Telefono <input type = "text" name="Telefono"/><br>
+       Domicilio <input type = "text" name="Domicilio"/><br>
+
+       <input type = "hidden" name="formulario" value="agregarEmpleados" />
+
+        <button type = "submit">Guardar</button>
+
+       
+       
+        
+        
+
+
+
+        </form>  
+        </justify> 
+
+
+     <p>Eliminar a los empleados</p>
+
+ <form action="eliminarempleados.php" method="POST">
+            Id del empleado : <input type="text" name="idEmpleados"> <br/>
+            <button type = "submit">Eliminar</button>
+            </form>
+
+        <p>Modificar a los empleados</p>
+
+  <form action="actualizar.php" method="POST">
+        Id del empleado<input type="text" name="idEmpleados"> <br/>
+        Nombre:<input type="text" name="Nombre"> <br/>
+        ApPaterno:<input type="text" name="Apellido_Paterno"> <br/>
+        apMaterno:<input type="text" name="Apellido_Materno"> <br/>
+        Telefono:<input type="text" name="Telefono"> <br/>
+        Domicilio:<input type="text" name="Domicilio"> <br/>
+        <button type = "submit">Actualizar</button>
+        </form>
+  
+
+    <p>Ver los registros de los empleados</p>
+
+  <form action="mostrar.php" method="POST">
+  <button type = "submit">Registros</button>
+  </form>
+
+    <a href="logout.php">cerrar sesion</a>
+       
+ </justify>       
+</body>
+</html>
+  

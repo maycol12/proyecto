@@ -1,0 +1,76 @@
+<html>
+<head>
+  <title>MENU</title>
+  <link href = "estilos.css" rel="stylesheet">
+</head>
+<body>
+<center>
+    <h1>Paquetes </h1><br>
+
+
+        <table>
+<tr></tr>
+    <td><form metho = "POST" action="empleados.html ">  <tr></tr><button type = "submit">Agregar Empleados</button><td></tr>
+    </form>
+    <tr>
+   <td> <form metho = "POST" action="clientes.html "> <tr></tr><button type = "submit">Agregar Clientes</button><td></tr>
+    </form>
+    <tr>
+   <td> <form metho = "POST" action="pedidos.html "> <tr></tr><button type = "submit">Pedidos</button><td></tr>
+    </form>
+    <tr>
+   <td> <form metho = "POST" action="sucursal.html "><tr></tr> <button type = "submit">Sucursal</button> <td></tr>
+      </form>
+      <tr>
+   <td> <form metho = "POST" action="paquetes.html ">  <tr></tr> <button type = "submit">Paquetes</button>      <td></tr>
+    </form>      
+    </table>  
+    </center>
+
+    
+    <form method = "POST" action="acciones.php">        
+       idPaquetes <input type ="text" name="idPaquetes"/><br>
+       Categoria<input type = "text" name="Categoria"/><br>
+       Nombre <input type = "text" name="Nombre"/><br>
+       Precio <input type = "text" name="Precio"/><br>
+       
+
+      <input type = "hidden" name="formulario" value="agregarPaquetes" />
+
+        <button type = "submit">Guardar</button>
+
+
+
+        </form>  
+        </justify> 
+
+
+     <p>Eliminar a los paquetes</p>
+
+ <form action="eliminarpaquetes.php" method="POST">
+            Id del paquete : <input type="text" name="idPaquetes"> <br/>
+            <button type = "submit">Eliminar</button>
+            </form>
+
+        <p>Modificar a los paquetes</p>
+
+  <form action="actualizarpaquetes.php" method="POST">
+        Id del paquete<input type="text" name="idPaquetes"> <br/>
+        Categoria:<input type="text" name="Categoria"> <br/>
+        Nombre:<input type="text" name="Nombre"> <br/>
+        Precio: <input type = "text" name="Precio"> <br/>
+        <button type = "submit">Actualizar</button>
+        </form>
+  
+
+    <p>Ver los registros de los paquetes</p>
+
+  <form action="registropaquetes.php" method="POST">
+  <button type = "submit">Registros</button>
+  </form>
+
+    <a href="logout.php">cerrar sesion</a>
+
+
+</body>
+</html>
